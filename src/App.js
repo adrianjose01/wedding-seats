@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import HomeScreen from "./screens/HomeScreen";
+import GuestTableScreen from "./screens/GuestTableScreen";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const [isGuestSelected, setIsGuestSelected] = useState(false);
+  const [guestTable, setGuestTable] = useState();
+
+  function onBackHandler() {
+    setIsGuestSelected(false);
+  }
+
+  function onSelectGuestHandler() {
+    setIsGuestSelected(true);
+  }
+
+  function onSelectGuestTableHandler(table) {
+    setGuestTable(table);
+  }
+
+  return !isGuestSelected ? (
+    <HomeScreen
+      onSelectGuest={onSelectGuestHandler}
+      onSelectTable={onSelectGuestTableHandler}
+    />
+  ) : (
+    <GuestTableScreen onBack={onBackHandler} table={guestTable} />
   );
 }
 
