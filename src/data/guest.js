@@ -51,7 +51,8 @@ const guests = [
   { mesa: "MESA 4", value: "Melissa Tena" },
   { mesa: "MESA 4", value: "Esteban Tena" },
   { mesa: "MESA 4", value: "Hannovis Tiburcio" },
-  { mesa: "MESA 4", value: "Fausto de Jesus" },
+  { mesa: "MESA 4", value: "Rolando Agustin Peralta" },
+  { mesa: "MESA 4", value: "Lidia M. Santana" },
   // MESA 5
   { mesa: "MESA 5", value: "Henry Henriquez" },
   { mesa: "MESA 5", value: "Helen Hernández" },
@@ -171,8 +172,6 @@ const guests = [
   { mesa: "MESA 15", value: "Frank" },
   { mesa: "MESA 15", value: "Eduardo Ovalle" },
   { mesa: "MESA 15", value: "Esposa Ovalle" },
-  { mesa: "MESA 15", value: "Rolando Agustin Peralta" },
-  { mesa: "MESA 15", value: "Lidia M. Santana" },
 ];
 
 export default guests;

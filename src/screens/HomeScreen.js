@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assests/logo.svg";
+import logo from "../assests/boda.svg";
 import { AutoComplete } from "antd";
 import guests from "../data/guest";
 
@@ -16,7 +16,7 @@ const HomeScreen = ({ onSelectGuest, onSelectTable }) => {
 
   return (
     <div className="flex items-center justify-center flex-col h-dvh">
-      <img src={logo} alt="Logo" />
+      <img src={logo} alt="Logo" className="w-40" />
       <h1 className="poppins-semibold text-2xl text-wed-blue mt-10">
         Encuentre su mesa
       </h1>

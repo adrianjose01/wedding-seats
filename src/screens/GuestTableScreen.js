@@ -7,7 +7,7 @@ const GuestTableScreen = ({ onBack, table }) => {
       <p className="px-10 py-2 text-wed-blue text-xl m-5 mb-16 poppins-semibold bg-white rounded-md">
         {table}
       </p>
-      <p className="poppins-light text-white w-56">
+      <p className="poppins-light text-white w-56 text-center">
         Los números de cada mesa están ubicados en el centro.
       </p>
       <button
